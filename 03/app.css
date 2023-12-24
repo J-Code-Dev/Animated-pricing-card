@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.price {
+    font-size: 36px;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 16px;
+    color: #777;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pro Plan Specific Styles */
+.pro {
+    border: 2px solid #007BFF;
+}
+
+.pro .btn {
+    background-color: #007BFF;
+}
+
+.pro .btn:hover {
+    background-color: #0056b3;
+}
